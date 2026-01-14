@@ -1,0 +1,263 @@
+/* Who is Settlo - aligned with hero */
+
+.who-settlo {
+  background: radial-gradient(circle at top left, #f2fbf7 0, #ffffff 45%, #f5f7fb 100%);
+  padding: 80px 0;          /* same vertical pattern as .hero */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.who-settlo .container {
+  max-width: 1200px;        /* match your global container / hero container */
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;          /* same side padding as hero container */
+  box-sizing: border-box;
+}
+
+.who-settlo-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Left side */
+
+.who-settlo-content {
+  width: 100%;
+}
+
+.who-settlo-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(63, 176, 114, 0.08);
+  color: #3fb072;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 12px 0;
+}
+
+.who-settlo-title {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.who-settlo-title span {
+  color: #3fb072;
+}
+
+.who-settlo-intro {
+  font-size: 0.98rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.who-settlo-intro.secondary {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+/* Highlights */
+
+.who-settlo-highlights {
+  margin: 28px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.highlight-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: rgba(63, 176, 114, 0.1);
+  color: #3fb072;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-texts {
+  flex: 1;
+  min-width: 0;
+}
+
+.highlight-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.highlight-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* CTA row */
+
+.who-settlo-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.who-settlo-cta-row .btn {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right side */
+
+.who-settlo-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.who-settlo-main-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.who-settlo-main-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.who-settlo-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.who-settlo-main-content {
+  padding: 22px 24px 20px 24px;
+}
+
+.who-settlo-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Stats */
+
+.who-settlo-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Responsive: match hero behavior */
+
+@media (max-width: 1024px) {
+  .who-settlo {
+    padding: 60px 0;
+  }
+
+  .who-settlo-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .who-settlo-side {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .who-settlo-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-settlo {
+    padding: 50px 0;
+  }
+
+  .who-settlo .container {
+    padding: 0 16px; /* same as hero on tablet/mobile if you use it */
+  }
+
+  .who-settlo-layout {
+    gap: 32px;
+  }
+
+  .who-settlo-title {
+    font-size: 1.7rem;
+  }
+
+  .who-settlo-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .who-settlo-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .who-settlo {
+    padding: 40px 0;
+  }
+
+  .who-settlo .container {
+    padding: 0 16px;
+  }
+
+  .who-settlo-title {
+    font-size: 1.45rem;
+  }
+
+  .who-settlo-intro {
+    font-size: 0.9rem;
+  }
+
+  .who-settlo-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .who-settlo-cta-row .btn {
+    width: 100%;
+  }
+}

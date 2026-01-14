@@ -1,0 +1,201 @@
+/* Tech Stack Section - Dark Background with Auto-Scroll (Reference Image 5) */
+.tech-stack-new {
+  background: #131313;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* Header */
+.tech-stack-label {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ff6b35;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.tech-stack-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.tech-stack-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Scroll Container */
+.tech-scroll-container {
+  margin: 40px 0;
+}
+
+.tech-scroll-row {
+  overflow: hidden;
+  padding: 12px 0;
+  white-space: nowrap;
+}
+
+.tech-scroll-track {
+  display: inline-flex;
+  gap: 16px;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Left scroll animation */
+.scroll-left .tech-scroll-track {
+  animation-name: scrollLeft;
+}
+
+/* Right scroll animation */
+.scroll-right .tech-scroll-track {
+  animation-name: scrollRight;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tech Pill */
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.tech-pill:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.tech-pill-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tech-pill-logo.invert {
+  filter: invert(1);
+}
+
+.tech-pill-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* CTA */
+.tech-stack-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-tech-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-tech-cta:hover {
+  background: #fff;
+  color: #131313;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* Pause animation on hover */
+.tech-scroll-row:hover .tech-scroll-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-stack-new {
+    padding: 60px 0;
+  }
+
+  .tech-stack-title {
+    font-size: 1.8rem;
+  }
+
+  .tech-stack-subtitle {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+
+  .tech-pill {
+    padding: 10px 18px;
+    gap: 8px;
+  }
+
+  .tech-pill-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tech-pill-name {
+    font-size: 0.8rem;
+  }
+
+  .tech-scroll-track {
+    animation-duration: 20s;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-stack-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-tech-cta {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+
+  .tech-scroll-track {
+    gap: 12px;
+  }
+
+  .tech-pill {
+    padding: 8px 14px;
+  }
+}

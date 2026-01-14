@@ -1,0 +1,122 @@
+/* AI Solutions Section Styles */
+.ai-solutions {
+  background: linear-gradient(135deg, #3a4d7c 0%, #2c3a5f 100%);
+}
+
+.ai-solutions .section-title {
+  color: #fff;
+}
+
+.ai-tabs {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ai-tabs-header {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.ai-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ai-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.ai-tab-btn.active {
+  background: #3fb072;
+  border-color: #3fb072;
+  color: #fff;
+}
+
+.ai-tabs-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ai-tab-panel {
+  text-align: center;
+}
+
+.ai-tab-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  text-align: left;
+}
+
+.ai-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.ai-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #3fb072;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ai-tabs-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-tab-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ai-tabs-content {
+    padding: 30px 20px;
+  }
+
+  .ai-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-tab-description {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+/* Tech Partners Section Styles */
+.tech-partners {
+  background: #fff;
+}
+
+.partners-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.partners-tab {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #f5f7fa;
+  color: #4a4a4a;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners-tab:hover {
+  background: #e8f4fd;
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.partners-tab.active {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.partners-content {
+  min-height: 200px;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.partner-item {
+  padding: 16px 32px;
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  transition: all 0.3s;
+}
+
+.partner-item:hover {
+  background: #e8f4fd;
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.award-item:hover {
+  background: #e8f4fd;
+  transform: translateY(-3px);
+}
+
+.award-icon {
+  font-size: 2rem;
+}
+
+.award-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-tabs {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-item {
+    padding: 12px 20px;
+  }
+}

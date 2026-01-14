@@ -1,0 +1,375 @@
+/* Excellence Section - Pro Level Design */
+.excellence {
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0a192f 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* Animated background elements */
+.excellence::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+  animation: excellenceFloat 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes excellenceFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-2%, -2%) rotate(2deg);
+  }
+}
+
+/* Glowing orbs */
+.excellence::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+.excellence .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section header styling */
+.excellence .section-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #ff6b35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+}
+
+.excellence .section-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* Grid layout */
+.excellence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  perspective: 1000px;
+}
+
+/* Card styling */
+.excellence-card {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 36px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+}
+
+/* Card shine effect */
+.excellence-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.7s ease;
+}
+
+.excellence-card:hover::before {
+  left: 100%;
+}
+
+/* Card glow effect on hover */
+.excellence-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 2px;
+  background: linear-gradient(135deg, #ff6b35, #3b82f6, #8b5cf6);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.excellence-card:hover::after {
+  opacity: 1;
+}
+
+.excellence-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(255, 107, 53, 0.2), 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+}
+
+.excellence-card.active {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 107, 53, 0.15) 0%,
+    rgba(139, 92, 246, 0.08) 100%
+  );
+  border-color: rgba(255, 107, 53, 0.4);
+  transform: translateY(-5px);
+}
+
+.excellence-card.active::after {
+  opacity: 0.6;
+}
+
+/* Card icon container */
+.excellence-card-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff6b35, #f59e0b);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+  transition: all 0.3s ease;
+}
+
+.excellence-card:hover .excellence-card-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+}
+
+/* Card title */
+.excellence-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+  transition: color 0.3s ease;
+}
+
+.excellence-card:hover .excellence-title {
+  color: #ff6b35;
+}
+
+/* Card description */
+.excellence-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Features section */
+.excellence-features {
+  margin-top: 28px;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.features-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #ff6b35 0%, #3b82f6 50%, transparent 100%);
+  margin-bottom: 24px;
+  border-radius: 2px;
+}
+
+.excellence-features ul {
+  margin-bottom: 28px;
+}
+
+.excellence-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.excellence-features li:last-child {
+  border-bottom: none;
+}
+
+.feature-arrow {
+  flex-shrink: 0;
+  color: #ff6b35;
+  margin-top: 4px;
+  filter: drop-shadow(0 0 4px rgba(255, 107, 53, 0.5));
+}
+
+/* Blue highlighted keywords */
+.feature-highlight {
+  color: #60a5fa;
+  font-weight: 600;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* CTA Button */
+.excellence-features .btn-primary {
+  background: linear-gradient(135deg, #ff6b35, #f59e0b);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.35);
+}
+
+.excellence-features .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 107, 53, 0.45);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .excellence {
+    padding: 80px 0;
+  }
+
+  .excellence .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .excellence-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .excellence .section-title {
+    font-size: 2.2rem;
+  }
+
+  .excellence .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .excellence-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .excellence {
+    padding: 60px 0;
+  }
+
+  .excellence .section-title {
+    font-size: 1.8rem;
+    padding: 0 15px;
+  }
+
+  .excellence .section-subtitle {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .excellence-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .excellence-title {
+    font-size: 1.3rem;
+  }
+
+  .excellence-description,
+  .excellence-features li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .excellence {
+    padding: 50px 0;
+  }
+
+  .excellence .section-title {
+    font-size: 1.5rem;
+  }
+
+  .excellence-card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .excellence-card {
+    padding: 20px;
+  }
+}
