@@ -24,31 +24,29 @@
 .case-studies-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: 60px;
   margin-bottom: 50px;
-  border: 2px dashed rgba(139, 92, 246, 0.3);
   border-radius: 24px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
+  background: transparent;
 }
 
 .case-study-card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
   padding: 40px;
   position: relative;
   transition: all 0.4s ease;
+  border: 2px dashed rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
 }
 
 /* Dashed borders between cards */
 .case-study-card:nth-child(1),
 .case-study-card:nth-child(2) {
-  border-bottom: 2px dashed rgba(139, 92, 246, 0.3);
 }
 
 .case-study-card:nth-child(1),
 .case-study-card:nth-child(3) {
-  border-right: 2px dashed rgba(139, 92, 246, 0.3);
 }
 
 .case-study-card:hover {
