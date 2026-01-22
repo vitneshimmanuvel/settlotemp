@@ -1,927 +1,1417 @@
-import { Palette, PenTool, Layout, Scissors, Monitor, Server, Smartphone, Network, Brain, Search, Video, TrendingUp, Megaphone, Building, Brush, UserCheck } from 'lucide-react';
+import {
+  Palette,
+  PenTool,
+  Layout,
+  Scissors,
+  Monitor,
+  Server,
+  Smartphone,
+  Network,
+  Brain,
+  Search,
+  Video,
+  TrendingUp,
+  Megaphone,
+  Building,
+  Brush,
+  UserCheck,
+  Award,
+} from "lucide-react";
 
 // Design Courses Data
 export const designCourses = {
-  'graphic-design': {
-    id: 'graphic-design',
-    title: 'Graphic Design Mastery',
-    description: 'Master the art of visual communication. Learn professional graphic design from industry experts, covering Adobe Creative Suite, branding, typography, and creating stunning visuals for print and digital media.',
-    tag: 'Popular',
-    category: 'Design Courses',
-    duration: '12 Weeks',
-    students: '850+',
-    rating: '4.9',
-    reviews: '156',
+  "graphic-design": {
+    id: "graphic-design",
+    title: "Graphic Design Mastery",
+    description:
+      "Master the art of visual communication. Learn professional graphic design from industry experts, covering Adobe Creative Suite, branding, typography, and creating stunning visuals for print and digital media.",
+    tag: "Popular",
+    category: "Design Courses",
+    duration: "12 Weeks",
+    students: "850+",
+    rating: "4.9",
+    reviews: "156",
     price: 14999,
     originalPrice: 24999,
     discount: 40,
-    totalHours: '60+',
+    totalHours: "60+",
     icon: Palette,
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    backLink: '/academy/design-courses',
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    backLink: "/academy/design-courses",
     whatYouLearn: [
-      'Master Adobe Photoshop, Illustrator & InDesign',
-      'Create professional logos and brand identities',
-      'Design for print media and digital platforms',
-      'Typography and color theory fundamentals',
-      'Photo editing and image manipulation',
-      'Create marketing materials and social media graphics',
-      'Build a professional design portfolio',
-      'Understand client communication and project management'
+      "Master Adobe Photoshop, Illustrator & InDesign",
+      "Create professional logos and brand identities",
+      "Design for print media and digital platforms",
+      "Typography and color theory fundamentals",
+      "Photo editing and image manipulation",
+      "Create marketing materials and social media graphics",
+      "Build a professional design portfolio",
+      "Understand client communication and project management",
     ],
     curriculum: [
       {
-        title: 'Introduction to Graphic Design',
-        duration: '2 weeks',
-        topics: ['Design principles', 'Color theory', 'Typography basics', 'Design software overview']
+        title: "Introduction to Graphic Design",
+        duration: "2 weeks",
+        topics: [
+          "Design principles",
+          "Color theory",
+          "Typography basics",
+          "Design software overview",
+        ],
       },
       {
-        title: 'Adobe Photoshop Mastery',
-        duration: '3 weeks',
-        topics: ['Photo editing', 'Layer compositions', 'Digital painting', 'Effects and filters']
+        title: "Adobe Photoshop Mastery",
+        duration: "3 weeks",
+        topics: [
+          "Photo editing",
+          "Layer compositions",
+          "Digital painting",
+          "Effects and filters",
+        ],
       },
       {
-        title: 'Adobe Illustrator Deep Dive',
-        duration: '3 weeks',
-        topics: ['Vector graphics', 'Logo design', 'Icon creation', 'Pattern design']
+        title: "Adobe Illustrator Deep Dive",
+        duration: "3 weeks",
+        topics: [
+          "Vector graphics",
+          "Logo design",
+          "Icon creation",
+          "Pattern design",
+        ],
       },
       {
-        title: 'Branding & Identity Design',
-        duration: '2 weeks',
-        topics: ['Brand strategy', 'Logo systems', 'Brand guidelines', 'Visual identity']
+        title: "Branding & Identity Design",
+        duration: "2 weeks",
+        topics: [
+          "Brand strategy",
+          "Logo systems",
+          "Brand guidelines",
+          "Visual identity",
+        ],
       },
       {
-        title: 'Portfolio & Career',
-        duration: '2 weeks',
-        topics: ['Portfolio creation', 'Client pitching', 'Freelancing tips', 'Industry insights']
-      }
+        title: "Portfolio & Career",
+        duration: "2 weeks",
+        topics: [
+          "Portfolio creation",
+          "Client pitching",
+          "Freelancing tips",
+          "Industry insights",
+        ],
+      },
     ],
     requirements: [
-      'Basic computer skills',
-      'Access to Adobe Creative Cloud (trial available)',
-      'No prior design experience needed',
-      'Passion for creativity'
-    ]
+      "Basic computer skills",
+      "Access to Adobe Creative Cloud (trial available)",
+      "No prior design experience needed",
+      "Passion for creativity",
+    ],
   },
-  'ui-ux-design': {
-    id: 'ui-ux-design',
-    title: 'UI/UX Design Mastery',
-    description: 'Learn to create intuitive, beautiful user interfaces and seamless user experiences. Master Figma, prototyping, user research, and design systems used by top companies.',
-    tag: 'Trending',
-    category: 'Design Courses',
-    duration: '10 Weeks',
-    students: '620+',
-    rating: '4.8',
-    reviews: '134',
+  "ui-ux-design": {
+    id: "ui-ux-design",
+    title: "UI/UX Design Mastery",
+    description:
+      "Learn to create intuitive, beautiful user interfaces and seamless user experiences. Master Figma, prototyping, user research, and design systems used by top companies.",
+    tag: "Trending",
+    category: "Design Courses",
+    duration: "10 Weeks",
+    students: "620+",
+    rating: "4.8",
+    reviews: "134",
     price: 12999,
     originalPrice: 19999,
     discount: 35,
-    totalHours: '50+',
+    totalHours: "50+",
     icon: Layout,
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    backLink: '/academy/design-courses',
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    backLink: "/academy/design-courses",
     whatYouLearn: [
-      'Master Figma for UI design and prototyping',
-      'Conduct effective user research and testing',
-      'Create wireframes and interactive prototypes',
-      'Design mobile apps and responsive websites',
-      'Build and maintain design systems',
-      'Understand accessibility and inclusive design',
-      'Create user personas and journey maps',
-      'Collaborate with developers effectively'
+      "Master Figma for UI design and prototyping",
+      "Conduct effective user research and testing",
+      "Create wireframes and interactive prototypes",
+      "Design mobile apps and responsive websites",
+      "Build and maintain design systems",
+      "Understand accessibility and inclusive design",
+      "Create user personas and journey maps",
+      "Collaborate with developers effectively",
     ],
     curriculum: [
       {
-        title: 'UX Fundamentals',
-        duration: '2 weeks',
-        topics: ['User-centered design', 'Research methods', 'Personas', 'User journeys']
+        title: "UX Fundamentals",
+        duration: "2 weeks",
+        topics: [
+          "User-centered design",
+          "Research methods",
+          "Personas",
+          "User journeys",
+        ],
       },
       {
-        title: 'Figma Mastery',
-        duration: '3 weeks',
-        topics: ['Interface design', 'Components', 'Auto-layout', 'Prototyping']
+        title: "Figma Mastery",
+        duration: "3 weeks",
+        topics: [
+          "Interface design",
+          "Components",
+          "Auto-layout",
+          "Prototyping",
+        ],
       },
       {
-        title: 'Mobile App Design',
-        duration: '2 weeks',
-        topics: ['iOS design patterns', 'Android design', 'Gestures', 'Navigation']
+        title: "Mobile App Design",
+        duration: "2 weeks",
+        topics: [
+          "iOS design patterns",
+          "Android design",
+          "Gestures",
+          "Navigation",
+        ],
       },
       {
-        title: 'Web Design',
-        duration: '2 weeks',
-        topics: ['Responsive design', 'Landing pages', 'E-commerce', 'Dashboards']
+        title: "Web Design",
+        duration: "2 weeks",
+        topics: [
+          "Responsive design",
+          "Landing pages",
+          "E-commerce",
+          "Dashboards",
+        ],
       },
       {
-        title: 'Design Systems',
-        duration: '1 week',
-        topics: ['Component libraries', 'Style guides', 'Documentation', 'Handoff']
-      }
+        title: "Design Systems",
+        duration: "1 week",
+        topics: [
+          "Component libraries",
+          "Style guides",
+          "Documentation",
+          "Handoff",
+        ],
+      },
     ],
     requirements: [
-      'Basic understanding of design concepts',
-      'Figma account (free tier available)',
-      'Curiosity about user behavior',
-      'Basic computer skills'
-    ]
+      "Basic understanding of design concepts",
+      "Figma account (free tier available)",
+      "Curiosity about user behavior",
+      "Basic computer skills",
+    ],
   },
-  'website-design': {
-    id: 'website-design',
-    title: 'Website Design Mastery',
-    description: 'Design stunning, conversion-focused websites. Learn modern web design principles, responsive layouts, and create websites that captivate visitors and drive results.',
-    tag: 'New',
-    category: 'Design Courses',
-    duration: '8 Weeks',
-    students: '480+',
-    rating: '4.7',
-    reviews: '98',
+  "website-design": {
+    id: "website-design",
+    title: "Website Design Mastery",
+    description:
+      "Design stunning, conversion-focused websites. Learn modern web design principles, responsive layouts, and create websites that captivate visitors and drive results.",
+    tag: "New",
+    category: "Design Courses",
+    duration: "8 Weeks",
+    students: "480+",
+    rating: "4.7",
+    reviews: "98",
     price: 9999,
     originalPrice: 14999,
     discount: 33,
-    totalHours: '40+',
+    totalHours: "40+",
     icon: PenTool,
-    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    backLink: '/academy/design-courses',
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    backLink: "/academy/design-courses",
     whatYouLearn: [
-      'Design responsive websites for all devices',
-      'Create high-converting landing pages',
-      'Master modern web design trends',
-      'Design e-commerce product pages',
-      'Create effective CTAs and user flows',
-      'Optimize for user engagement',
-      'Work with grids and layouts',
-      'Prepare designs for development'
+      "Design responsive websites for all devices",
+      "Create high-converting landing pages",
+      "Master modern web design trends",
+      "Design e-commerce product pages",
+      "Create effective CTAs and user flows",
+      "Optimize for user engagement",
+      "Work with grids and layouts",
+      "Prepare designs for development",
     ],
     curriculum: [
       {
-        title: 'Web Design Fundamentals',
-        duration: '2 weeks',
-        topics: ['Grid systems', 'Responsive design', 'Web typography', 'Color for web']
+        title: "Web Design Fundamentals",
+        duration: "2 weeks",
+        topics: [
+          "Grid systems",
+          "Responsive design",
+          "Web typography",
+          "Color for web",
+        ],
       },
       {
-        title: 'Landing Page Design',
-        duration: '2 weeks',
-        topics: ['Hero sections', 'CTAs', 'Social proof', 'Conversion optimization']
+        title: "Landing Page Design",
+        duration: "2 weeks",
+        topics: [
+          "Hero sections",
+          "CTAs",
+          "Social proof",
+          "Conversion optimization",
+        ],
       },
       {
-        title: 'E-commerce Design',
-        duration: '2 weeks',
-        topics: ['Product pages', 'Cart design', 'Checkout flow', 'Category pages']
+        title: "E-commerce Design",
+        duration: "2 weeks",
+        topics: [
+          "Product pages",
+          "Cart design",
+          "Checkout flow",
+          "Category pages",
+        ],
       },
       {
-        title: 'Portfolio & Launch',
-        duration: '2 weeks',
-        topics: ['Case studies', 'Design handoff', 'Client presentation', 'Pricing strategies']
-      }
+        title: "Portfolio & Launch",
+        duration: "2 weeks",
+        topics: [
+          "Case studies",
+          "Design handoff",
+          "Client presentation",
+          "Pricing strategies",
+        ],
+      },
     ],
     requirements: [
-      'Basic design knowledge helpful but not required',
-      'Access to design software (Figma recommended)',
-      'Enthusiasm for web design'
-    ]
+      "Basic design knowledge helpful but not required",
+      "Access to design software (Figma recommended)",
+      "Enthusiasm for web design",
+    ],
   },
-  'textile-design': {
-    id: 'textile-design',
-    title: 'Textile Design Mastery',
-    description: 'Master textile and fashion design. Create stunning patterns, prints, and fabric designs for the fashion industry. Learn from industry professionals.',
-    tag: 'Specialized',
-    category: 'Design Courses',
-    duration: '10 Weeks',
-    students: '320+',
-    rating: '4.8',
-    reviews: '76',
+  "textile-design": {
+    id: "textile-design",
+    title: "Textile Design Mastery",
+    description:
+      "Master textile and fashion design. Create stunning patterns, prints, and fabric designs for the fashion industry. Learn from industry professionals.",
+    tag: "Specialized",
+    category: "Design Courses",
+    duration: "10 Weeks",
+    students: "320+",
+    rating: "4.8",
+    reviews: "76",
     price: 11999,
     originalPrice: 17999,
     discount: 33,
-    totalHours: '45+',
+    totalHours: "45+",
     icon: Scissors,
-    gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-    backLink: '/academy/design-courses',
+    gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    backLink: "/academy/design-courses",
     whatYouLearn: [
-      'Create original textile patterns and prints',
-      'Understand fabric types and their applications',
-      'Master CAD software for textile design',
-      'Learn color separation for printing',
-      'Design for different fashion seasons',
-      'Create mood boards and trend forecasts',
-      'Prepare files for fabric printing',
-      'Build a textile design portfolio'
+      "Create original textile patterns and prints",
+      "Understand fabric types and their applications",
+      "Master CAD software for textile design",
+      "Learn color separation for printing",
+      "Design for different fashion seasons",
+      "Create mood boards and trend forecasts",
+      "Prepare files for fabric printing",
+      "Build a textile design portfolio",
     ],
     curriculum: [
       {
-        title: 'Textile Fundamentals',
-        duration: '2 weeks',
-        topics: ['Fabric types', 'Print methods', 'Industry overview', 'Tools introduction']
+        title: "Textile Fundamentals",
+        duration: "2 weeks",
+        topics: [
+          "Fabric types",
+          "Print methods",
+          "Industry overview",
+          "Tools introduction",
+        ],
       },
       {
-        title: 'Pattern Design',
-        duration: '3 weeks',
-        topics: ['Repeat patterns', 'Geometric designs', 'Floral patterns', 'Abstract designs']
+        title: "Pattern Design",
+        duration: "3 weeks",
+        topics: [
+          "Repeat patterns",
+          "Geometric designs",
+          "Floral patterns",
+          "Abstract designs",
+        ],
       },
       {
-        title: 'Digital Textile Design',
-        duration: '3 weeks',
-        topics: ['CAD software', 'Color separation', 'Digital printing', 'File preparation']
+        title: "Digital Textile Design",
+        duration: "3 weeks",
+        topics: [
+          "CAD software",
+          "Color separation",
+          "Digital printing",
+          "File preparation",
+        ],
       },
       {
-        title: 'Industry Application',
-        duration: '2 weeks',
-        topics: ['Trend research', 'Portfolio building', 'Client projects', 'Industry connections']
-      }
+        title: "Industry Application",
+        duration: "2 weeks",
+        topics: [
+          "Trend research",
+          "Portfolio building",
+          "Client projects",
+          "Industry connections",
+        ],
+      },
     ],
     requirements: [
-      'Interest in fashion and textiles',
-      'Basic design software knowledge helpful',
-      'Creative mindset'
-    ]
-  }
+      "Interest in fashion and textiles",
+      "Basic design software knowledge helpful",
+      "Creative mindset",
+    ],
+  },
+  "brand-pro": {
+    id: "brand-pro",
+    title: "BrandPro: Digital Design & Marketing Mastery",
+    description:
+      "Transform your branding and digital marketing skills with this comprehensive mastery course. Build complete brand identities, websites, and marketing campaigns.",
+    tag: "Pro",
+    category: "Design Courses",
+    duration: "15+ Hours",
+    students: "450+",
+    rating: "4.8",
+    reviews: "112",
+    price: 2999,
+    originalPrice: 4999,
+    discount: 40,
+    totalHours: "15+",
+    icon: Brush,
+    gradient: "linear-gradient(135deg, #059669 0%, #2563eb 100%)",
+    backLink: "/academy/design-courses",
+    whatYouLearn: [
+      "Understand the fundamentals of branding and digital marketing",
+      "Create professional logos using Adobe Photoshop and Canva",
+      "Establish and manage brand presence on social media platforms",
+      "Develop and analyze social media marketing campaigns",
+      "Create interactive elements like QR codes and Google Forms",
+      "Design professional business cards and promotional posters",
+      "Build a complete brand website using website builders",
+      "Design user-friendly mobile applications for brand engagement",
+    ],
+    curriculum: [
+      {
+        title: "Introduction to Branding & Vision Development",
+        duration: "2 hours",
+        topics: [
+          "Branding concepts",
+          "Vision development",
+          "Digital presence fundamentals",
+        ],
+      },
+      {
+        title: "Brand Logo Creation & Design",
+        duration: "3 hours",
+        topics: [
+          "Logo design principles",
+          "Color theory",
+          "Typography",
+          "Adobe Photoshop basics",
+        ],
+      },
+      {
+        title: "Social Media Marketing & Analytics",
+        duration: "3 hours",
+        topics: [
+          "Platform-specific strategies",
+          "Campaign creation",
+          "Analytics tools",
+          "Performance analysis",
+        ],
+      },
+      {
+        title: "Business Card & Poster Design",
+        duration: "2 hours",
+        topics: [
+          "Business card design",
+          "Poster creation",
+          "Marketing materials",
+        ],
+      },
+      {
+        title: "Website Creation for Brand",
+        duration: "3 hours",
+        topics: [
+          "Website structure",
+          "Content creation",
+          "SEO basics",
+          "WordPress/Wix/Weebly",
+        ],
+      },
+      {
+        title: "UI/UX Design and Mobile Applications",
+        duration: "2 hours",
+        topics: [
+          "User interface principles",
+          "Mobile prototyping",
+          "Figma basics",
+        ],
+      },
+    ],
+    requirements: [
+      "No prior experience required",
+      "Basic computer skills helpful",
+      "Passion for creativity and branding",
+    ],
+  },
 };
 
 // Master Courses Data
 export const masterCourses = {
-  'ai-mastery': {
-    id: 'ai-mastery',
-    title: 'Artificial Intelligence Mastery',
-    description: 'Deep dive into AI and machine learning. Learn Python, TensorFlow, neural networks, and build real-world AI applications that solve complex problems.',
-    tag: 'Advanced',
-    category: 'Master Courses',
-    duration: '16 Weeks',
-    students: '720+',
-    rating: '4.9',
-    reviews: '189',
+  "ai-mastery": {
+    id: "ai-mastery",
+    title: "Artificial Intelligence Mastery",
+    description:
+      "Deep dive into AI and machine learning. Learn Python, TensorFlow, neural networks, and build real-world AI applications that solve complex problems.",
+    tag: "Advanced",
+    category: "Master Courses",
+    duration: "16 Weeks",
+    students: "720+",
+    rating: "4.9",
+    reviews: "189",
     price: 24999,
     originalPrice: 39999,
     discount: 38,
-    totalHours: '80+',
+    totalHours: "80+",
     icon: Brain,
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    backLink: '/academy/master-courses',
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    backLink: "/academy/master-courses",
     whatYouLearn: [
-      'Master Python programming for AI',
-      'Build machine learning models from scratch',
-      'Deep learning with TensorFlow and PyTorch',
-      'Natural Language Processing (NLP)',
-      'Computer Vision and image recognition',
-      'Deploy AI models to production',
-      'Work with real-world datasets',
-      'Understand AI ethics and best practices'
+      "Master Python programming for AI",
+      "Build machine learning models from scratch",
+      "Deep learning with TensorFlow and PyTorch",
+      "Natural Language Processing (NLP)",
+      "Computer Vision and image recognition",
+      "Deploy AI models to production",
+      "Work with real-world datasets",
+      "Understand AI ethics and best practices",
     ],
     curriculum: [
       {
-        title: 'Python for AI',
-        duration: '3 weeks',
-        topics: ['Python basics', 'NumPy', 'Pandas', 'Data visualization']
+        title: "Python for AI",
+        duration: "3 weeks",
+        topics: ["Python basics", "NumPy", "Pandas", "Data visualization"],
       },
       {
-        title: 'Machine Learning Fundamentals',
-        duration: '4 weeks',
-        topics: ['Supervised learning', 'Unsupervised learning', 'Model evaluation', 'Feature engineering']
+        title: "Machine Learning Fundamentals",
+        duration: "4 weeks",
+        topics: [
+          "Supervised learning",
+          "Unsupervised learning",
+          "Model evaluation",
+          "Feature engineering",
+        ],
       },
       {
-        title: 'Deep Learning',
-        duration: '4 weeks',
-        topics: ['Neural networks', 'CNNs', 'RNNs', 'Transfer learning']
+        title: "Deep Learning",
+        duration: "4 weeks",
+        topics: ["Neural networks", "CNNs", "RNNs", "Transfer learning"],
       },
       {
-        title: 'Advanced AI Topics',
-        duration: '3 weeks',
-        topics: ['NLP', 'Computer vision', 'Generative AI', 'AI in production']
+        title: "Advanced AI Topics",
+        duration: "3 weeks",
+        topics: ["NLP", "Computer vision", "Generative AI", "AI in production"],
       },
       {
-        title: 'Capstone Project',
-        duration: '2 weeks',
-        topics: ['Project planning', 'Implementation', 'Deployment', 'Presentation']
-      }
+        title: "Capstone Project",
+        duration: "2 weeks",
+        topics: [
+          "Project planning",
+          "Implementation",
+          "Deployment",
+          "Presentation",
+        ],
+      },
     ],
     requirements: [
-      'Basic programming knowledge',
-      'Understanding of mathematics (helpful)',
-      'Computer with 8GB+ RAM',
-      'Dedication to learning'
-    ]
+      "Basic programming knowledge",
+      "Understanding of mathematics (helpful)",
+      "Computer with 8GB+ RAM",
+      "Dedication to learning",
+    ],
   },
-  'seo-mastery': {
-    id: 'seo-mastery',
-    title: 'SEO/SEM Mastery',
-    description: 'Master search engine optimization and marketing. Drive organic traffic, run effective ad campaigns, and become a search marketing expert.',
-    tag: 'In-Demand',
-    category: 'Master Courses',
-    duration: '8 Weeks',
-    students: '560+',
-    rating: '4.8',
-    reviews: '145',
+  "seo-mastery": {
+    id: "seo-mastery",
+    title: "SEO/SEM Mastery",
+    description:
+      "Master search engine optimization and marketing. Drive organic traffic, run effective ad campaigns, and become a search marketing expert.",
+    tag: "In-Demand",
+    category: "Master Courses",
+    duration: "8 Weeks",
+    students: "560+",
+    rating: "4.8",
+    reviews: "145",
     price: 8999,
     originalPrice: 14999,
     discount: 40,
-    totalHours: '35+',
+    totalHours: "35+",
     icon: Search,
-    gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
-    backLink: '/academy/master-courses',
+    gradient: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
+    backLink: "/academy/master-courses",
     whatYouLearn: [
-      'Perform comprehensive keyword research',
-      'Optimize websites for search engines',
-      'Build high-quality backlinks',
-      'Run Google Ads campaigns',
-      'Analyze SEO performance with tools',
-      'Create SEO content strategies',
-      'Technical SEO implementation',
-      'Local SEO optimization'
+      "Perform comprehensive keyword research",
+      "Optimize websites for search engines",
+      "Build high-quality backlinks",
+      "Run Google Ads campaigns",
+      "Analyze SEO performance with tools",
+      "Create SEO content strategies",
+      "Technical SEO implementation",
+      "Local SEO optimization",
     ],
     curriculum: [
       {
-        title: 'SEO Fundamentals',
-        duration: '2 weeks',
-        topics: ['How search works', 'Keyword research', 'On-page SEO', 'SEO tools']
+        title: "SEO Fundamentals",
+        duration: "2 weeks",
+        topics: [
+          "How search works",
+          "Keyword research",
+          "On-page SEO",
+          "SEO tools",
+        ],
       },
       {
-        title: 'Technical SEO',
-        duration: '2 weeks',
-        topics: ['Site structure', 'Page speed', 'Mobile optimization', 'Schema markup']
+        title: "Technical SEO",
+        duration: "2 weeks",
+        topics: [
+          "Site structure",
+          "Page speed",
+          "Mobile optimization",
+          "Schema markup",
+        ],
       },
       {
-        title: 'Link Building',
-        duration: '2 weeks',
-        topics: ['Backlink strategies', 'Outreach', 'Guest posting', 'Link analysis']
+        title: "Link Building",
+        duration: "2 weeks",
+        topics: [
+          "Backlink strategies",
+          "Outreach",
+          "Guest posting",
+          "Link analysis",
+        ],
       },
       {
-        title: 'Google Ads & SEM',
-        duration: '2 weeks',
-        topics: ['Campaign setup', 'Ad copywriting', 'Bidding strategies', 'Analytics']
-      }
+        title: "Google Ads & SEM",
+        duration: "2 weeks",
+        topics: [
+          "Campaign setup",
+          "Ad copywriting",
+          "Bidding strategies",
+          "Analytics",
+        ],
+      },
     ],
     requirements: [
-      'Basic understanding of websites',
-      'Access to a website for practice',
-      'Analytical mindset'
-    ]
+      "Basic understanding of websites",
+      "Access to a website for practice",
+      "Analytical mindset",
+    ],
   },
-  'video-editing': {
-    id: 'video-editing',
-    title: 'Video Editing Mastery',
-    description: 'Professional video editing skills with Premiere Pro and After Effects. Create cinematic content, motion graphics, and build a career in video production.',
-    tag: 'Creative',
-    category: 'Master Courses',
-    duration: '10 Weeks',
-    students: '480+',
-    rating: '4.7',
-    reviews: '112',
+  "video-editing": {
+    id: "video-editing",
+    title: "Video Editing Mastery",
+    description:
+      "Professional video editing skills with Premiere Pro and After Effects. Create cinematic content, motion graphics, and build a career in video production.",
+    tag: "Creative",
+    category: "Master Courses",
+    duration: "10 Weeks",
+    students: "480+",
+    rating: "4.7",
+    reviews: "112",
     price: 12999,
     originalPrice: 19999,
     discount: 35,
-    totalHours: '50+',
+    totalHours: "50+",
     icon: Video,
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    backLink: '/academy/master-courses',
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    backLink: "/academy/master-courses",
     whatYouLearn: [
-      'Master Adobe Premiere Pro',
-      'Create motion graphics in After Effects',
-      'Color grading and correction',
-      'Audio editing and sound design',
-      'Create YouTube content',
-      'Commercial video production',
-      'Transitions and visual effects',
-      'Export and delivery best practices'
+      "Master Adobe Premiere Pro",
+      "Create motion graphics in After Effects",
+      "Color grading and correction",
+      "Audio editing and sound design",
+      "Create YouTube content",
+      "Commercial video production",
+      "Transitions and visual effects",
+      "Export and delivery best practices",
     ],
     curriculum: [
       {
-        title: 'Premiere Pro Basics',
-        duration: '3 weeks',
-        topics: ['Interface', 'Timeline editing', 'Transitions', 'Audio sync']
+        title: "Premiere Pro Basics",
+        duration: "3 weeks",
+        topics: ["Interface", "Timeline editing", "Transitions", "Audio sync"],
       },
       {
-        title: 'Advanced Editing',
-        duration: '2 weeks',
-        topics: ['Multi-cam editing', 'Color grading', 'Effects', 'Speed ramping']
+        title: "Advanced Editing",
+        duration: "2 weeks",
+        topics: [
+          "Multi-cam editing",
+          "Color grading",
+          "Effects",
+          "Speed ramping",
+        ],
       },
       {
-        title: 'After Effects',
-        duration: '3 weeks',
-        topics: ['Animation basics', 'Motion graphics', 'Text animation', 'Compositing']
+        title: "After Effects",
+        duration: "3 weeks",
+        topics: [
+          "Animation basics",
+          "Motion graphics",
+          "Text animation",
+          "Compositing",
+        ],
       },
       {
-        title: 'Professional Workflow',
-        duration: '2 weeks',
-        topics: ['Project organization', 'Client collaboration', 'Export settings', 'Portfolio']
-      }
+        title: "Professional Workflow",
+        duration: "2 weeks",
+        topics: [
+          "Project organization",
+          "Client collaboration",
+          "Export settings",
+          "Portfolio",
+        ],
+      },
     ],
     requirements: [
-      'Access to Adobe Premiere Pro and After Effects',
-      'Computer with good processing power',
-      'Basic computer skills'
-    ]
+      "Access to Adobe Premiere Pro and After Effects",
+      "Computer with good processing power",
+      "Basic computer skills",
+    ],
   },
-  'content-marketing': {
-    id: 'content-marketing',
-    title: 'Content Marketing Mastery',
-    description: 'Create compelling content strategies that drive engagement, leads, and business growth. Learn content creation, distribution, and analytics.',
-    tag: 'Business',
-    category: 'Master Courses',
-    duration: '8 Weeks',
-    students: '390+',
-    rating: '4.6',
-    reviews: '87',
+  "content-marketing": {
+    id: "content-marketing",
+    title: "Content Marketing Mastery",
+    description:
+      "Create compelling content strategies that drive engagement, leads, and business growth. Learn content creation, distribution, and analytics.",
+    tag: "Business",
+    category: "Master Courses",
+    duration: "8 Weeks",
+    students: "390+",
+    rating: "4.6",
+    reviews: "87",
     price: 7999,
     originalPrice: 12999,
     discount: 38,
-    totalHours: '30+',
+    totalHours: "30+",
     icon: TrendingUp,
-    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    backLink: '/academy/master-courses',
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    backLink: "/academy/master-courses",
     whatYouLearn: [
-      'Develop content marketing strategies',
-      'Create engaging blog content',
-      'Build editorial calendars',
-      'Content distribution tactics',
-      'Measure content performance',
-      'Email marketing integration',
-      'Social media content strategy',
-      'Lead generation through content'
+      "Develop content marketing strategies",
+      "Create engaging blog content",
+      "Build editorial calendars",
+      "Content distribution tactics",
+      "Measure content performance",
+      "Email marketing integration",
+      "Social media content strategy",
+      "Lead generation through content",
     ],
     curriculum: [
       {
-        title: 'Content Strategy',
-        duration: '2 weeks',
-        topics: ['Audience research', 'Content pillars', 'Competitive analysis', 'Goal setting']
+        title: "Content Strategy",
+        duration: "2 weeks",
+        topics: [
+          "Audience research",
+          "Content pillars",
+          "Competitive analysis",
+          "Goal setting",
+        ],
       },
       {
-        title: 'Content Creation',
-        duration: '3 weeks',
-        topics: ['Blog writing', 'Video content', 'Infographics', 'Podcasting basics']
+        title: "Content Creation",
+        duration: "3 weeks",
+        topics: [
+          "Blog writing",
+          "Video content",
+          "Infographics",
+          "Podcasting basics",
+        ],
       },
       {
-        title: 'Distribution & Promotion',
-        duration: '2 weeks',
-        topics: ['Social media', 'Email marketing', 'Paid promotion', 'Influencer outreach']
+        title: "Distribution & Promotion",
+        duration: "2 weeks",
+        topics: [
+          "Social media",
+          "Email marketing",
+          "Paid promotion",
+          "Influencer outreach",
+        ],
       },
       {
-        title: 'Analytics & Optimization',
-        duration: '1 week',
-        topics: ['KPIs', 'Google Analytics', 'A/B testing', 'ROI measurement']
-      }
+        title: "Analytics & Optimization",
+        duration: "1 week",
+        topics: ["KPIs", "Google Analytics", "A/B testing", "ROI measurement"],
+      },
     ],
     requirements: [
-      'Basic writing skills',
-      'Interest in marketing',
-      'Willingness to create content'
-    ]
-  }
+      "Basic writing skills",
+      "Interest in marketing",
+      "Willingness to create content",
+    ],
+  },
+  "master-pro": {
+    id: "master-pro",
+    title: "MasterPro: Complete Business & Tech Mastery",
+    description:
+      "Comprehensive mastery program covering business strategy, technology skills, and professional development. Become a complete professional ready for leadership roles.",
+    tag: "Premium",
+    category: "Master Courses",
+    duration: "20+ Hours",
+    students: "380+",
+    rating: "4.9",
+    reviews: "95",
+    price: 4999,
+    originalPrice: 7999,
+    discount: 38,
+    totalHours: "20+",
+    icon: Award,
+    gradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)",
+    backLink: "/academy/master-courses",
+    whatYouLearn: [
+      "Master strategic business planning and execution",
+      "Develop advanced project management skills",
+      "Build and lead high-performing teams",
+      "Create effective business presentations",
+      "Understand financial fundamentals for business",
+      "Master negotiation and communication skills",
+      "Learn automation and productivity tools",
+      "Build a professional network and personal brand",
+    ],
+    curriculum: [
+      {
+        title: "Business Strategy & Planning",
+        duration: "4 hours",
+        topics: [
+          "Strategic thinking",
+          "Business model canvas",
+          "Market analysis",
+          "Competitive positioning",
+        ],
+      },
+      {
+        title: "Project Management Excellence",
+        duration: "4 hours",
+        topics: [
+          "Agile methodologies",
+          "Resource planning",
+          "Risk management",
+          "Stakeholder communication",
+        ],
+      },
+      {
+        title: "Leadership & Team Building",
+        duration: "4 hours",
+        topics: [
+          "Leadership styles",
+          "Team dynamics",
+          "Conflict resolution",
+          "Performance management",
+        ],
+      },
+      {
+        title: "Business Communication",
+        duration: "3 hours",
+        topics: [
+          "Professional writing",
+          "Presentation skills",
+          "Negotiation tactics",
+          "Public speaking",
+        ],
+      },
+      {
+        title: "Technology & Automation",
+        duration: "3 hours",
+        topics: [
+          "Productivity tools",
+          "Automation basics",
+          "Data analysis",
+          "AI tools for business",
+        ],
+      },
+      {
+        title: "Professional Development",
+        duration: "2 hours",
+        topics: [
+          "Personal branding",
+          "Networking strategies",
+          "Career planning",
+          "Continuous learning",
+        ],
+      },
+    ],
+    requirements: [
+      "Basic professional experience helpful",
+      "Openness to learning new concepts",
+      "Ambition for career growth",
+    ],
+  },
 };
 
 // Fullstack Courses Data
 export const fullstackCourses = {
-  'frontend-dev': {
-    id: 'frontend-dev',
-    title: 'Frontend Development',
-    description: 'Master HTML, CSS, JavaScript, React, and modern frontend frameworks. Build stunning, responsive web interfaces from scratch.',
-    tag: 'Essential',
-    category: 'Fullstack Courses',
-    duration: '14 Weeks',
-    students: '920+',
-    rating: '4.9',
-    reviews: '234',
+  "frontend-dev": {
+    id: "frontend-dev",
+    title: "Frontend Development",
+    description:
+      "Master HTML, CSS, JavaScript, React, and modern frontend frameworks. Build stunning, responsive web interfaces from scratch.",
+    tag: "Essential",
+    category: "Fullstack Courses",
+    duration: "14 Weeks",
+    students: "920+",
+    rating: "4.9",
+    reviews: "234",
     price: 16999,
     originalPrice: 29999,
     discount: 43,
-    totalHours: '70+',
+    totalHours: "70+",
     icon: Monitor,
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    backLink: '/academy/fullstack-courses',
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    backLink: "/academy/fullstack-courses",
     whatYouLearn: [
-      'Master HTML5 and semantic markup',
-      'Advanced CSS including Flexbox and Grid',
-      'JavaScript ES6+ and DOM manipulation',
-      'React.js and state management',
-      'Responsive and mobile-first design',
-      'Version control with Git',
-      'API integration and async programming',
-      'Build and deploy real projects'
+      "Master HTML5 and semantic markup",
+      "Advanced CSS including Flexbox and Grid",
+      "JavaScript ES6+ and DOM manipulation",
+      "React.js and state management",
+      "Responsive and mobile-first design",
+      "Version control with Git",
+      "API integration and async programming",
+      "Build and deploy real projects",
     ],
     curriculum: [
       {
-        title: 'HTML & CSS Foundations',
-        duration: '3 weeks',
-        topics: ['Semantic HTML', 'CSS layouts', 'Flexbox', 'CSS Grid', 'Responsive design']
+        title: "HTML & CSS Foundations",
+        duration: "3 weeks",
+        topics: [
+          "Semantic HTML",
+          "CSS layouts",
+          "Flexbox",
+          "CSS Grid",
+          "Responsive design",
+        ],
       },
       {
-        title: 'JavaScript Mastery',
-        duration: '4 weeks',
-        topics: ['ES6+ features', 'DOM manipulation', 'Async programming', 'API calls']
+        title: "JavaScript Mastery",
+        duration: "4 weeks",
+        topics: [
+          "ES6+ features",
+          "DOM manipulation",
+          "Async programming",
+          "API calls",
+        ],
       },
       {
-        title: 'React.js Deep Dive',
-        duration: '5 weeks',
-        topics: ['Components', 'Hooks', 'State management', 'Routing', 'Testing']
+        title: "React.js Deep Dive",
+        duration: "5 weeks",
+        topics: [
+          "Components",
+          "Hooks",
+          "State management",
+          "Routing",
+          "Testing",
+        ],
       },
       {
-        title: 'Projects & Deployment',
-        duration: '2 weeks',
-        topics: ['Git workflows', 'CI/CD', 'Hosting', 'Portfolio projects']
-      }
+        title: "Projects & Deployment",
+        duration: "2 weeks",
+        topics: ["Git workflows", "CI/CD", "Hosting", "Portfolio projects"],
+      },
     ],
     requirements: [
-      'Basic computer skills',
-      'No prior coding experience needed',
-      'Passion for building things'
-    ]
+      "Basic computer skills",
+      "No prior coding experience needed",
+      "Passion for building things",
+    ],
   },
-  'backend-dev': {
-    id: 'backend-dev',
-    title: 'Backend Development',
-    description: 'Learn Node.js, Python, databases, APIs, and server-side architecture. Build scalable, secure backend systems for modern applications.',
-    tag: 'Core',
-    category: 'Fullstack Courses',
-    duration: '16 Weeks',
-    students: '680+',
-    rating: '4.8',
-    reviews: '178',
+  "backend-dev": {
+    id: "backend-dev",
+    title: "Backend Development",
+    description:
+      "Learn Node.js, Python, databases, APIs, and server-side architecture. Build scalable, secure backend systems for modern applications.",
+    tag: "Core",
+    category: "Fullstack Courses",
+    duration: "16 Weeks",
+    students: "680+",
+    rating: "4.8",
+    reviews: "178",
     price: 18999,
     originalPrice: 34999,
     discount: 46,
-    totalHours: '80+',
+    totalHours: "80+",
     icon: Server,
-    gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
-    backLink: '/academy/fullstack-courses',
+    gradient: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
+    backLink: "/academy/fullstack-courses",
     whatYouLearn: [
-      'Node.js and Express.js framework',
-      'Database design with SQL and NoSQL',
-      'RESTful API development',
-      'Authentication and authorization',
-      'Server deployment and DevOps basics',
-      'Microservices architecture',
-      'Security best practices',
-      'Performance optimization'
+      "Node.js and Express.js framework",
+      "Database design with SQL and NoSQL",
+      "RESTful API development",
+      "Authentication and authorization",
+      "Server deployment and DevOps basics",
+      "Microservices architecture",
+      "Security best practices",
+      "Performance optimization",
     ],
     curriculum: [
       {
-        title: 'Node.js Fundamentals',
-        duration: '3 weeks',
-        topics: ['Node runtime', 'Express.js', 'Middleware', 'Error handling']
+        title: "Node.js Fundamentals",
+        duration: "3 weeks",
+        topics: ["Node runtime", "Express.js", "Middleware", "Error handling"],
       },
       {
-        title: 'Databases',
-        duration: '4 weeks',
-        topics: ['PostgreSQL', 'MongoDB', 'ORMs', 'Query optimization']
+        title: "Databases",
+        duration: "4 weeks",
+        topics: ["PostgreSQL", "MongoDB", "ORMs", "Query optimization"],
       },
       {
-        title: 'API Development',
-        duration: '4 weeks',
-        topics: ['REST APIs', 'GraphQL', 'Authentication', 'Rate limiting']
+        title: "API Development",
+        duration: "4 weeks",
+        topics: ["REST APIs", "GraphQL", "Authentication", "Rate limiting"],
       },
       {
-        title: 'Deployment & DevOps',
-        duration: '3 weeks',
-        topics: ['Docker', 'Cloud platforms', 'CI/CD', 'Monitoring']
+        title: "Deployment & DevOps",
+        duration: "3 weeks",
+        topics: ["Docker", "Cloud platforms", "CI/CD", "Monitoring"],
       },
       {
-        title: 'Capstone Project',
-        duration: '2 weeks',
-        topics: ['Full backend system', 'Documentation', 'Testing', 'Deployment']
-      }
+        title: "Capstone Project",
+        duration: "2 weeks",
+        topics: [
+          "Full backend system",
+          "Documentation",
+          "Testing",
+          "Deployment",
+        ],
+      },
     ],
     requirements: [
-      'Basic programming knowledge (any language)',
-      'Understanding of how the web works',
-      'Command line familiarity helpful'
-    ]
+      "Basic programming knowledge (any language)",
+      "Understanding of how the web works",
+      "Command line familiarity helpful",
+    ],
   },
-  'mobile-app-dev': {
-    id: 'mobile-app-dev',
-    title: 'Mobile App Development',
-    description: 'Build iOS and Android apps with React Native and Flutter. Learn mobile development best practices and publish your apps to app stores.',
-    tag: 'Hot',
-    category: 'Fullstack Courses',
-    duration: '12 Weeks',
-    students: '540+',
-    rating: '4.8',
-    reviews: '143',
+  "mobile-app-dev": {
+    id: "mobile-app-dev",
+    title: "Mobile App Development",
+    description:
+      "Build iOS and Android apps with React Native and Flutter. Learn mobile development best practices and publish your apps to app stores.",
+    tag: "Hot",
+    category: "Fullstack Courses",
+    duration: "12 Weeks",
+    students: "540+",
+    rating: "4.8",
+    reviews: "143",
     price: 14999,
     originalPrice: 24999,
     discount: 40,
-    totalHours: '55+',
+    totalHours: "55+",
     icon: Smartphone,
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    backLink: '/academy/fullstack-courses',
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    backLink: "/academy/fullstack-courses",
     whatYouLearn: [
-      'React Native for cross-platform development',
-      'Flutter and Dart programming',
-      'Mobile UI/UX best practices',
-      'State management solutions',
-      'API integration in mobile apps',
-      'Push notifications and local storage',
-      'App store submission process',
-      'Mobile app monetization'
+      "React Native for cross-platform development",
+      "Flutter and Dart programming",
+      "Mobile UI/UX best practices",
+      "State management solutions",
+      "API integration in mobile apps",
+      "Push notifications and local storage",
+      "App store submission process",
+      "Mobile app monetization",
     ],
     curriculum: [
       {
-        title: 'React Native Basics',
-        duration: '4 weeks',
-        topics: ['Setup', 'Components', 'Navigation', 'Styling']
+        title: "React Native Basics",
+        duration: "4 weeks",
+        topics: ["Setup", "Components", "Navigation", "Styling"],
       },
       {
-        title: 'Advanced React Native',
-        duration: '3 weeks',
-        topics: ['State management', 'APIs', 'Authentication', 'Push notifications']
+        title: "Advanced React Native",
+        duration: "3 weeks",
+        topics: [
+          "State management",
+          "APIs",
+          "Authentication",
+          "Push notifications",
+        ],
       },
       {
-        title: 'Flutter Introduction',
-        duration: '3 weeks',
-        topics: ['Dart basics', 'Widgets', 'State management', 'Platform differences']
+        title: "Flutter Introduction",
+        duration: "3 weeks",
+        topics: [
+          "Dart basics",
+          "Widgets",
+          "State management",
+          "Platform differences",
+        ],
       },
       {
-        title: 'Publishing Apps',
-        duration: '2 weeks',
-        topics: ['App store guidelines', 'Build optimization', 'Submission', 'Marketing']
-      }
+        title: "Publishing Apps",
+        duration: "2 weeks",
+        topics: [
+          "App store guidelines",
+          "Build optimization",
+          "Submission",
+          "Marketing",
+        ],
+      },
     ],
     requirements: [
-      'JavaScript knowledge helpful',
-      'Mac for iOS development (optional)',
-      'Android device or emulator'
-    ]
+      "JavaScript knowledge helpful",
+      "Mac for iOS development (optional)",
+      "Android device or emulator",
+    ],
   },
-  'python-networking': {
-    id: 'python-networking',
-    title: 'Python & Networking',
-    description: 'Master Python programming and networking fundamentals. Build automation scripts, network tools, and understand cybersecurity basics.',
-    tag: 'Technical',
-    category: 'Fullstack Courses',
-    duration: '10 Weeks',
-    students: '420+',
-    rating: '4.7',
-    reviews: '98',
+  "python-networking": {
+    id: "python-networking",
+    title: "Python & Networking",
+    description:
+      "Master Python programming and networking fundamentals. Build automation scripts, network tools, and understand cybersecurity basics.",
+    tag: "Technical",
+    category: "Fullstack Courses",
+    duration: "10 Weeks",
+    students: "420+",
+    rating: "4.7",
+    reviews: "98",
     price: 10999,
     originalPrice: 17999,
     discount: 39,
-    totalHours: '45+',
+    totalHours: "45+",
     icon: Network,
-    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    backLink: '/academy/fullstack-courses',
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    backLink: "/academy/fullstack-courses",
     whatYouLearn: [
-      'Python programming from basics to advanced',
-      'Network fundamentals and protocols',
-      'Automation with Python scripts',
-      'Socket programming',
-      'Network security basics',
-      'System administration tasks',
-      'Web scraping and APIs',
-      'DevOps fundamentals'
+      "Python programming from basics to advanced",
+      "Network fundamentals and protocols",
+      "Automation with Python scripts",
+      "Socket programming",
+      "Network security basics",
+      "System administration tasks",
+      "Web scraping and APIs",
+      "DevOps fundamentals",
     ],
     curriculum: [
       {
-        title: 'Python Fundamentals',
-        duration: '3 weeks',
-        topics: ['Syntax', 'Data structures', 'OOP', 'File handling']
+        title: "Python Fundamentals",
+        duration: "3 weeks",
+        topics: ["Syntax", "Data structures", "OOP", "File handling"],
       },
       {
-        title: 'Networking Basics',
-        duration: '3 weeks',
-        topics: ['TCP/IP', 'DNS', 'HTTP', 'Network tools']
+        title: "Networking Basics",
+        duration: "3 weeks",
+        topics: ["TCP/IP", "DNS", "HTTP", "Network tools"],
       },
       {
-        title: 'Python for Networking',
-        duration: '2 weeks',
-        topics: ['Socket programming', 'Network scripts', 'Automation', 'APIs']
+        title: "Python for Networking",
+        duration: "2 weeks",
+        topics: ["Socket programming", "Network scripts", "Automation", "APIs"],
       },
       {
-        title: 'Security & Advanced Topics',
-        duration: '2 weeks',
-        topics: ['Security basics', 'Penetration testing intro', 'DevOps', 'Projects']
-      }
+        title: "Security & Advanced Topics",
+        duration: "2 weeks",
+        topics: [
+          "Security basics",
+          "Penetration testing intro",
+          "DevOps",
+          "Projects",
+        ],
+      },
     ],
     requirements: [
-      'No prior programming experience needed',
-      'Basic understanding of computers',
-      'Interest in networking and security'
-    ]
-  }
+      "No prior programming experience needed",
+      "Basic understanding of computers",
+      "Interest in networking and security",
+    ],
+  },
 };
 
 // Mastery Courses Data
 export const masteryCourses = {
-  'digital-marketing': {
-    id: 'digital-marketing',
-    title: 'Digital Marketing Mastery',
-    description: 'Complete digital marketing training covering social media, email marketing, analytics, PPC, and campaign management for business growth.',
-    tag: 'Comprehensive',
-    category: 'Mastery Courses',
-    duration: '12 Weeks',
-    students: '780+',
-    rating: '4.8',
-    reviews: '198',
+  "digital-marketing": {
+    id: "digital-marketing",
+    title: "Digital Marketing Mastery",
+    description:
+      "Complete digital marketing training covering social media, email marketing, analytics, PPC, and campaign management for business growth.",
+    tag: "Comprehensive",
+    category: "Mastery Courses",
+    duration: "12 Weeks",
+    students: "780+",
+    rating: "4.8",
+    reviews: "198",
     price: 11999,
     originalPrice: 21999,
     discount: 45,
-    totalHours: '55+',
+    totalHours: "55+",
     icon: Megaphone,
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    backLink: '/academy/mastery-courses',
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    backLink: "/academy/mastery-courses",
     whatYouLearn: [
-      'Create comprehensive digital marketing strategies',
-      'Master social media marketing on all platforms',
-      'Build and automate email marketing campaigns',
-      'Run profitable Google and Facebook ads',
-      'Analytics and data-driven decision making',
-      'Content marketing and copywriting',
-      'Lead generation and conversion optimization',
-      'Build and grow personal/business brands'
+      "Create comprehensive digital marketing strategies",
+      "Master social media marketing on all platforms",
+      "Build and automate email marketing campaigns",
+      "Run profitable Google and Facebook ads",
+      "Analytics and data-driven decision making",
+      "Content marketing and copywriting",
+      "Lead generation and conversion optimization",
+      "Build and grow personal/business brands",
     ],
     curriculum: [
       {
-        title: 'Digital Marketing Foundations',
-        duration: '2 weeks',
-        topics: ['Marketing fundamentals', 'Customer journey', 'Funnel design', 'Strategy creation']
+        title: "Digital Marketing Foundations",
+        duration: "2 weeks",
+        topics: [
+          "Marketing fundamentals",
+          "Customer journey",
+          "Funnel design",
+          "Strategy creation",
+        ],
       },
       {
-        title: 'Social Media Marketing',
-        duration: '3 weeks',
-        topics: ['Platform strategies', 'Content creation', 'Community building', 'Influencer marketing']
+        title: "Social Media Marketing",
+        duration: "3 weeks",
+        topics: [
+          "Platform strategies",
+          "Content creation",
+          "Community building",
+          "Influencer marketing",
+        ],
       },
       {
-        title: 'Paid Advertising',
-        duration: '3 weeks',
-        topics: ['Google Ads', 'Facebook/Instagram Ads', 'Retargeting', 'Budget optimization']
+        title: "Paid Advertising",
+        duration: "3 weeks",
+        topics: [
+          "Google Ads",
+          "Facebook/Instagram Ads",
+          "Retargeting",
+          "Budget optimization",
+        ],
       },
       {
-        title: 'Email & Automation',
-        duration: '2 weeks',
-        topics: ['Email campaigns', 'Automation flows', 'Segmentation', 'A/B testing']
+        title: "Email & Automation",
+        duration: "2 weeks",
+        topics: [
+          "Email campaigns",
+          "Automation flows",
+          "Segmentation",
+          "A/B testing",
+        ],
       },
       {
-        title: 'Analytics & Optimization',
-        duration: '2 weeks',
-        topics: ['Google Analytics', 'Conversion tracking', 'Reporting', 'ROI optimization']
-      }
+        title: "Analytics & Optimization",
+        duration: "2 weeks",
+        topics: [
+          "Google Analytics",
+          "Conversion tracking",
+          "Reporting",
+          "ROI optimization",
+        ],
+      },
     ],
     requirements: [
-      'Basic computer skills',
-      'Social media account for practice',
-      'Interest in marketing'
-    ]
+      "Basic computer skills",
+      "Social media account for practice",
+      "Interest in marketing",
+    ],
   },
-  'brand-development': {
-    id: 'brand-development',
-    title: 'Brand Development',
-    description: 'Build powerful brands from scratch. Learn brand strategy, positioning, visual identity, and create brands that resonate with audiences.',
-    tag: 'Business',
-    category: 'Mastery Courses',
-    duration: '10 Weeks',
-    students: '340+',
-    rating: '4.7',
-    reviews: '89',
+  "brand-development": {
+    id: "brand-development",
+    title: "Brand Development",
+    description:
+      "Build powerful brands from scratch. Learn brand strategy, positioning, visual identity, and create brands that resonate with audiences.",
+    tag: "Business",
+    category: "Mastery Courses",
+    duration: "10 Weeks",
+    students: "340+",
+    rating: "4.7",
+    reviews: "89",
     price: 9999,
     originalPrice: 16999,
     discount: 41,
-    totalHours: '40+',
+    totalHours: "40+",
     icon: Building,
-    gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-    backLink: '/academy/mastery-courses',
+    gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    backLink: "/academy/mastery-courses",
     whatYouLearn: [
-      'Develop brand strategy and positioning',
-      'Create compelling brand stories',
-      'Design visual brand identities',
-      'Build brand guidelines',
-      'Brand voice and messaging',
-      'Launch and grow brands',
-      'Brand management best practices',
-      'Personal branding strategies'
+      "Develop brand strategy and positioning",
+      "Create compelling brand stories",
+      "Design visual brand identities",
+      "Build brand guidelines",
+      "Brand voice and messaging",
+      "Launch and grow brands",
+      "Brand management best practices",
+      "Personal branding strategies",
     ],
     curriculum: [
       {
-        title: 'Brand Strategy',
-        duration: '3 weeks',
-        topics: ['Market research', 'Target audience', 'Positioning', 'Competitive analysis']
+        title: "Brand Strategy",
+        duration: "3 weeks",
+        topics: [
+          "Market research",
+          "Target audience",
+          "Positioning",
+          "Competitive analysis",
+        ],
       },
       {
-        title: 'Brand Identity',
-        duration: '3 weeks',
-        topics: ['Logo design', 'Color systems', 'Typography', 'Visual elements']
+        title: "Brand Identity",
+        duration: "3 weeks",
+        topics: [
+          "Logo design",
+          "Color systems",
+          "Typography",
+          "Visual elements",
+        ],
       },
       {
-        title: 'Brand Communication',
-        duration: '2 weeks',
-        topics: ['Brand voice', 'Messaging', 'Storytelling', 'Content strategy']
+        title: "Brand Communication",
+        duration: "2 weeks",
+        topics: [
+          "Brand voice",
+          "Messaging",
+          "Storytelling",
+          "Content strategy",
+        ],
       },
       {
-        title: 'Brand Launch & Management',
-        duration: '2 weeks',
-        topics: ['Launch strategy', 'Brand guidelines', 'Brand audits', 'Growth strategies']
-      }
+        title: "Brand Launch & Management",
+        duration: "2 weeks",
+        topics: [
+          "Launch strategy",
+          "Brand guidelines",
+          "Brand audits",
+          "Growth strategies",
+        ],
+      },
     ],
     requirements: [
-      'Basic understanding of business',
-      'Interest in branding and marketing',
-      'Creative mindset'
-    ]
+      "Basic understanding of business",
+      "Interest in branding and marketing",
+      "Creative mindset",
+    ],
   },
-  'cartoon-caricature': {
-    id: 'cartoon-caricature',
-    title: 'Cartoon & Caricature Mastery',
-    description: 'Master the art of cartoon illustration and caricature. Create unique character designs, humorous illustrations, and build a career in illustration.',
-    tag: 'Creative',
-    category: 'Mastery Courses',
-    duration: '8 Weeks',
-    students: '280+',
-    rating: '4.9',
-    reviews: '67',
+  "cartoon-caricature": {
+    id: "cartoon-caricature",
+    title: "Cartoon & Caricature Mastery",
+    description:
+      "Master the art of cartoon illustration and caricature. Create unique character designs, humorous illustrations, and build a career in illustration.",
+    tag: "Creative",
+    category: "Mastery Courses",
+    duration: "8 Weeks",
+    students: "280+",
+    rating: "4.9",
+    reviews: "67",
     price: 8999,
     originalPrice: 13999,
     discount: 36,
-    totalHours: '35+',
+    totalHours: "35+",
     icon: Brush,
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    backLink: '/academy/mastery-courses',
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    backLink: "/academy/mastery-courses",
     whatYouLearn: [
-      'Master cartoon character design',
-      'Create expressive caricatures',
-      'Digital illustration techniques',
-      'Develop your unique style',
-      'Anatomy for cartoonists',
-      'Color theory for illustrations',
-      'Build an illustration portfolio',
-      'Monetize your art'
+      "Master cartoon character design",
+      "Create expressive caricatures",
+      "Digital illustration techniques",
+      "Develop your unique style",
+      "Anatomy for cartoonists",
+      "Color theory for illustrations",
+      "Build an illustration portfolio",
+      "Monetize your art",
     ],
     curriculum: [
       {
-        title: 'Cartoon Fundamentals',
-        duration: '2 weeks',
-        topics: ['Basic shapes', 'Expressions', 'Body language', 'Character design']
+        title: "Cartoon Fundamentals",
+        duration: "2 weeks",
+        topics: [
+          "Basic shapes",
+          "Expressions",
+          "Body language",
+          "Character design",
+        ],
       },
       {
-        title: 'Caricature Techniques',
-        duration: '2 weeks',
-        topics: ['Exaggeration', 'Likeness', 'Humor', 'Style development']
+        title: "Caricature Techniques",
+        duration: "2 weeks",
+        topics: ["Exaggeration", "Likeness", "Humor", "Style development"],
       },
       {
-        title: 'Digital Illustration',
-        duration: '2 weeks',
-        topics: ['Digital tools', 'Coloring', 'Effects', 'Backgrounds']
+        title: "Digital Illustration",
+        duration: "2 weeks",
+        topics: ["Digital tools", "Coloring", "Effects", "Backgrounds"],
       },
       {
-        title: 'Career & Portfolio',
-        duration: '2 weeks',
-        topics: ['Portfolio building', 'Freelancing', 'Licensing', 'Social media']
-      }
+        title: "Career & Portfolio",
+        duration: "2 weeks",
+        topics: [
+          "Portfolio building",
+          "Freelancing",
+          "Licensing",
+          "Social media",
+        ],
+      },
     ],
     requirements: [
-      'Basic drawing skills helpful',
-      'Drawing tablet recommended',
-      'Passion for art and humor'
-    ]
+      "Basic drawing skills helpful",
+      "Drawing tablet recommended",
+      "Passion for art and humor",
+    ],
   },
-  'junior-pro': {
-    id: 'junior-pro',
-    title: 'Junior Pro Programs',
-    description: 'Specialized programs for young professionals and fresh graduates. Get hands-on experience with industry projects and mentorship.',
-    tag: 'Entry Level',
-    category: 'Mastery Courses',
-    duration: '6 Weeks',
-    students: '460+',
-    rating: '4.6',
-    reviews: '124',
+  "junior-pro": {
+    id: "junior-pro",
+    title: "Junior Pro Programs",
+    description:
+      "Specialized programs for young professionals and fresh graduates. Get hands-on experience with industry projects and mentorship.",
+    tag: "Entry Level",
+    category: "Mastery Courses",
+    duration: "6 Weeks",
+    students: "460+",
+    rating: "4.6",
+    reviews: "124",
     price: 5999,
     originalPrice: 9999,
     discount: 40,
-    totalHours: '25+',
+    totalHours: "25+",
     icon: UserCheck,
-    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    backLink: '/academy/mastery-courses',
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    backLink: "/academy/mastery-courses",
     whatYouLearn: [
-      'Industry-ready skills foundation',
-      'Real project experience',
-      'Professional communication',
-      'Portfolio development',
-      'Interview preparation',
-      'Time and task management',
-      'Collaboration and teamwork',
-      'Career planning'
+      "Industry-ready skills foundation",
+      "Real project experience",
+      "Professional communication",
+      "Portfolio development",
+      "Interview preparation",
+      "Time and task management",
+      "Collaboration and teamwork",
+      "Career planning",
     ],
     curriculum: [
       {
-        title: 'Professional Skills',
-        duration: '1 week',
-        topics: ['Communication', 'Email etiquette', 'Time management', 'Goal setting']
+        title: "Professional Skills",
+        duration: "1 week",
+        topics: [
+          "Communication",
+          "Email etiquette",
+          "Time management",
+          "Goal setting",
+        ],
       },
       {
-        title: 'Technical Foundation',
-        duration: '2 weeks',
-        topics: ['Based on chosen track', 'Hands-on projects', 'Tool proficiency', 'Best practices']
+        title: "Technical Foundation",
+        duration: "2 weeks",
+        topics: [
+          "Based on chosen track",
+          "Hands-on projects",
+          "Tool proficiency",
+          "Best practices",
+        ],
       },
       {
-        title: 'Industry Projects',
-        duration: '2 weeks',
-        topics: ['Real client briefs', 'Team collaboration', 'Feedback incorporation', 'Project delivery']
+        title: "Industry Projects",
+        duration: "2 weeks",
+        topics: [
+          "Real client briefs",
+          "Team collaboration",
+          "Feedback incorporation",
+          "Project delivery",
+        ],
       },
       {
-        title: 'Career Launch',
-        duration: '1 week',
-        topics: ['Portfolio review', 'Resume building', 'Interview prep', 'Job search strategy']
-      }
+        title: "Career Launch",
+        duration: "1 week",
+        topics: [
+          "Portfolio review",
+          "Resume building",
+          "Interview prep",
+          "Job search strategy",
+        ],
+      },
     ],
     requirements: [
-      'Recent graduate or career switcher',
-      'Basic computer skills',
-      'Enthusiasm to learn'
-    ]
-  }
+      "Recent graduate or career switcher",
+      "Basic computer skills",
+      "Enthusiasm to learn",
+    ],
+  },
 };
 
 // Get all courses
@@ -930,7 +1420,7 @@ export const getAllCourses = () => {
     ...designCourses,
     ...masterCourses,
     ...fullstackCourses,
-    ...masteryCourses
+    ...masteryCourses,
   };
 };
 

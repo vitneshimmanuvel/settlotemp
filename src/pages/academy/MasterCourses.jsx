@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Clock, Brain, Search, Video, TrendingUp } from 'lucide-react';
+import { ArrowLeft, Clock, Brain, Search, Video, TrendingUp, Award } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './Academy.css';
@@ -44,6 +44,16 @@ const masterCourses = [
     icon: TrendingUp,
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     path: '/academy/course/content-marketing'
+  },
+  {
+    id: 'master-pro',
+    title: 'MasterPro: Complete Business & Tech Mastery',
+    description: 'Comprehensive mastery program covering business strategy, technology skills, and professional development.',
+    tag: 'Premium',
+    duration: '20+ Hours',
+    icon: Award,
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+    path: '/academy/course/master-pro'
   }
 ];
 

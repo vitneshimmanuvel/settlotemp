@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Clock, Palette, PenTool, Layout, Scissors } from 'lucide-react';
+import { ArrowLeft, Clock, Palette, PenTool, Layout, Scissors, Brush } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './Academy.css';
@@ -44,6 +44,16 @@ const designCourses = [
     icon: Scissors,
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
     path: '/academy/course/textile-design'
+  },
+  {
+    id: 'brand-pro',
+    title: 'BrandPro: Digital Design & Marketing Mastery',
+    description: 'Transform your branding and digital marketing skills. Build complete brand identities and marketing campaigns.',
+    tag: 'Pro',
+    duration: '15+ Hours',
+    icon: Brush,
+    gradient: 'linear-gradient(135deg, #059669 0%, #2563eb 100%)',
+    path: '/academy/course/brand-pro'
   }
 ];
 
